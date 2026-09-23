@@ -6,6 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Recalls</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+      .section-title {
+        max-width: 1200px;
+        margin: 48px auto 20px;
+        padding: 0 16px;
+        text-align: center;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+        gap: 32px 24px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+      .car-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+      }
+      .car-item .logo-container {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4px;
+      }
+      .car-item .logo-container img {
+        max-height: 60px;
+        max-width: 120px;
+      }
+      .car-item a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+      }
+      .car-item button {
+        white-space: nowrap;
+        min-width: 170px;
+        margin: 0;
+        text-transform: none;
+      }
+    </style>
     <link rel="apple-touch-icon" sizes="180x180" href="fapple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -13,190 +58,198 @@
   </head>
   <body>
     <main>
-        <h1>Recalls</h1>  
+        <h1>Recalls</h1>
+
+        <h2 class="section-title">Most used</h2>
         <div class="container">
 
             <div class='car-item'>
                 <div class='logo-container'>
-                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/acura.png' alt=acuraLogo />
-                </div>
-                <a href='https://www.acura.ca/en/owners/recalls' target='_blank'><button>acura 🇨🇦</button></a>
-                <a href='https://owners.acura.com/service-maintenance/recalls' target='_blank'><button>acura 🇺🇸</button></a>
-            </div>
-            <div class='car-item'>
-                <div class='logo-container'>
-                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/audi.png' alt=audiLogo />
-                </div>
-                <a href='https://www.audi.ca/en/owners/recalls/' target='_blank'><button>audi 🇨🇦</button></a>
-                <a href='https://www.audiusa.com/us/web/en/owners/recalls.html' target='_blank'><button>audi 🇺🇸</button></a>
-            </div>
-            <div class='car-item'>
-                <div class='logo-container'>
-                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/bmw.png' alt=bmwLogo />
-                </div>
-                <a href='https://www.bmw.ca/en/topics/owners/recall-information.html' target='_blank'><button>bmw 🇨🇦</button></a>
-                <a href='https://www.bmwusa.com/safety-recalls.html' target='_blank'><button>bmw 🇺🇸</button></a>
-            </div>
-            <div class='car-item'>
-                <div class='logo-container'>
-                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/buick.png' alt=buickLogo />
-                </div>
-                <a href='https://www.buick.ca/en/support/recalls' target='_blank'><button>buick 🇨🇦</button></a>
-                <a href='https://www.buick.com/support/vehicle/manuals-guides/recalls' target='_blank'><button>buick 🇺🇸</button></a>
-            </div>
-            <div class='car-item'>
-                <div class='logo-container'>
-                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/cadillac.png' alt=cadillacLogo />
-                </div>
-                <a href='https://www.cadillac.ca/en/support/recalls' target='_blank'><button>cadillac 🇨🇦</button></a>
-                <a href='https://www.cadillac.com/support/vehicle/manuals-guides/recalls' target='_blank'><button>cadillac 🇺🇸</button></a>
-            </div>
-            <div class='car-item'>
-                <div class='logo-container'>
-                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/chevrolet.png' alt=chevroletLogo />
-                </div>
-                <a href='https://www.chevrolet.ca/en/support/recalls' target='_blank'><button>chevrolet 🇨🇦</button></a>
-                <a href='https://www.chevrolet.com/support/vehicle/manuals-guides/recalls' target='_blank'><button>chevrolet 🇺🇸</button></a>
-            </div>
-            <div class='car-item'>
-                <div class='logo-container'>
-                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/chrysler.png' alt=chryslerLogo />
-                </div>
-                <a href='https://www.mopar.ca/en/my-vehicle/recalls' target='_blank'><button>chrysler 🇨🇦</button></a>
-                <a href='https://www.mopar.com/en-us/my-vehicle/recalls.html' target='_blank'><button>chrysler 🇺🇸</button></a>
-            </div>
-            <div class='car-item'>
-                <div class='logo-container'>
-                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/dodge.png' alt=dodgeLogo />
-                </div>
-                <a href='https://www.mopar.ca/en/my-vehicle/recalls' target='_blank'><button>dodge 🇨🇦</button></a>
-                <a href='https://www.mopar.com/en-us/my-vehicle/recalls.html' target='_blank'><button>dodge 🇺🇸</button></a>
-            </div>
-            <div class='car-item'>
-                <div class='logo-container'>
                     <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/ford.png' alt=fordLogo />
                 </div>
-                <a href='https://www.ford.ca/support/recalls/' target='_blank'><button>ford 🇨🇦</button></a>
-                <a href='https://www.ford.com/support/recalls/' target='_blank'><button>ford 🇺🇸</button></a>
-            </div>
-            <div class='car-item'>
-                <div class='logo-container'>
-                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/genesis.png' alt=genesisLogo />
-                </div>
-                <a href='https://www.genesis.com/ca/en/owners/recalls.html' target='_blank'><button>genesis 🇨🇦</button></a>
-                <a href='https://www.genesis.com/us/en/support/recalls' target='_blank'><button>genesis 🇺🇸</button></a>
-            </div>
-            <div class='car-item'>
-                <div class='logo-container'>
-                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/gmc.png' alt=gmcLogo />
-                </div>
-                <a href='https://www.gmccanada.ca/en/support/recalls' target='_blank'><button>gmc 🇨🇦</button></a>
-                <a href='https://www.gmc.com/support/vehicle/manuals-guides/recalls' target='_blank'><button>gmc 🇺🇸</button></a>
-            </div>
-            <div class='car-item'>
-                <div class='logo-container'>
-                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/honda.png' alt=hondaLogo />
-                </div>
-                <a href='https://www.honda.ca/en/owners/recalls' target='_blank'><button>honda 🇨🇦</button></a>
-                <a href='https://owners.honda.com/service-maintenance/recalls' target='_blank'><button>honda 🇺🇸</button></a>
-            </div>
-            <div class='car-item'>
-                <div class='logo-container'>
-                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/hyundai.png' alt=hyundaiLogo />
-                </div>
-                <a href='https://www.hyundaicanada.com/en/owners/recalls' target='_blank'><button>hyundai 🇨🇦</button></a>
-                <a href='https://owners.hyundaiusa.com/us/en/resources/recalls.html' target='_blank'><button>hyundai 🇺🇸</button></a>
-            </div>
-            <div class='car-item'>
-                <div class='logo-container'>
-                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/infiniti.png' alt=infinitiLogo />
-                </div>
-                <a href='https://www.infiniti.ca/en/owners/recalls.html' target='_blank'><button>infiniti 🇨🇦</button></a>
-                <a href='https://www.infinitiusa.com/recalls-lookup/' target='_blank'><button>infiniti 🇺🇸</button></a>
-            </div>
-            <div class='car-item'>
-                <div class='logo-container'>
-                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/jeep.png' alt=jeepLogo />
-                </div>
-                <a href='https://www.mopar.ca/en/my-vehicle/recalls' target='_blank'><button>jeep 🇨🇦</button></a>
-                <a href='https://www.mopar.com/en-us/my-vehicle/recalls.html' target='_blank'><button>jeep 🇺🇸</button></a>
-            </div>
-            <div class='car-item'>
-                <div class='logo-container'>
-                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/kia.png' alt=kiaLogo />
-                </div>
-                <a href='https://www.kia.ca/en/owners/recalls' target='_blank'><button>kia 🇨🇦</button></a>
-                <a href='https://www.kia.com/us/en/recalls' target='_blank'><button>kia 🇺🇸</button></a>
-            </div>
-            <div class='car-item'>
-                <div class='logo-container'>
-                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/land-rover.png' alt=land-roverLogo />
-                </div>
-                <a href='https://www.landrover.ca/en/ownership/recalls.html' target='_blank'><button>land rover 🇨🇦</button></a>
-                <a href='https://www.landroverusa.com/ownership/recalls.html' target='_blank'><button>land rover 🇺🇸</button></a>
-            </div>
-            <div class='car-item'>
-                <div class='logo-container'>
-                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/lexus.png' alt=lexusLogo />
-                </div>
-                <a href='https://www.lexus.ca/lexus/en/owners/recalls' target='_blank'><button>lexus 🇨🇦</button></a>
-                <a href='https://www.lexus.com/recall' target='_blank'><button>lexus 🇺🇸</button></a>
+                <a href='https://www.ford.ca/support/recalls/' target='_blank'><button>Ford CA</button></a>
+                <a href='https://www.ford.com/support/recalls/' target='_blank'><button>Ford US</button></a>
             </div>
             <div class='car-item'>
                 <div class='logo-container'>
                     <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/lincoln.png' alt=lincolnLogo />
                 </div>
-                <a href='https://www.lincolncanada.com/support/recalls/' target='_blank'><button>lincoln 🇨🇦</button></a>
-                <a href='https://www.lincoln.com/support/recalls/' target='_blank'><button>lincoln 🇺🇸</button></a>
+                <a href='https://www.ford.ca/support/recalls-details/' target='_blank'><button>Lincoln CA</button></a>
+                <a href='https://www.ford.com/support/recalls-details/?srsltid=AfmBOoqDK0PnWqtGyVJHGDp1Adpt3SdgtC9UbjQ17prDfz6gUlCd7Ruz' target='_blank'><button>Lincoln US</button></a>
             </div>
             <div class='car-item'>
                 <div class='logo-container'>
-                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/mercedes-benz.png' alt=mercedes-benzLogo />
+                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/gmc.png' alt=gmcLogo />
                 </div>
-                <a href='https://www.mercedes-benz.ca/en/recalls' target='_blank'><button>mercedes-benz 🇨🇦</button></a>
-                <a href='https://www.mbusa.com/en/recall' target='_blank'><button>mercedes-benz 🇺🇸</button></a>
+                <a href='https://www.gmccanada.ca/en/ownercenter/recalls' target='_blank'><button>GMC CA</button></a>
+                <a href='https://www.gmc.com/ownercenter/recalls' target='_blank'><button>GMC US</button></a>
             </div>
             <div class='car-item'>
                 <div class='logo-container'>
-                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/nissan.png' alt=nissanLogo />
+                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/chevrolet.png' alt=chevroletLogo />
                 </div>
-                <a href='https://www.nissan.ca/en/owners/recalls.html' target='_blank'><button>nissan 🇨🇦</button></a>
-                <a href='https://www.nissanusa.com/recalls-vin/' target='_blank'><button>nissan 🇺🇸</button></a>
+                <a href='https://www.gmccanada.ca/en/ownercenter/recalls' target='_blank'><button>Chevrolet CA</button></a>
+                <a href='https://www.gmc.com/ownercenter/recalls' target='_blank'><button>Chevrolet US</button></a>
             </div>
             <div class='car-item'>
                 <div class='logo-container'>
-                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/porsche.png' alt=porscheLogo />
+                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/cadillac.png' alt=cadillacLogo />
                 </div>
-                <a href='https://recall.porsche.com/prod/pag/vinrecalllookup.nsf/CA?OpenForm' target='_blank'><button>porsche 🇨🇦</button></a>
-                <a href='https://recall.porsche.com/prod/pag/vinrecalllookup.nsf/US?OpenForm' target='_blank'><button>porsche 🇺🇸</button></a>
+                <a href='https://www.gmccanada.ca/en/ownercenter/recalls' target='_blank'><button>Cadillac CA</button></a>
+                <a href='https://www.gmc.com/ownercenter/recalls' target='_blank'><button>Cadillac US</button></a>
             </div>
             <div class='car-item'>
                 <div class='logo-container'>
                     <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/ram.png' alt=ramLogo />
                 </div>
-                <a href='https://www.mopar.ca/en/my-vehicle/recalls' target='_blank'><button>ram 🇨🇦</button></a>
-                <a href='https://www.mopar.com/en-us/my-vehicle/recalls.html' target='_blank'><button>ram 🇺🇸</button></a>
-            </div>
-            <div class='car-item'>
-                <div class='logo-container'>
-                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/subaru.png' alt=subaruLogo />
-                </div>
-                <a href='https://www.subaru.ca/en/owners/recalls' target='_blank'><button>subaru 🇨🇦</button></a>
-                <a href='https://www.subaru.com/owners/recalls' target='_blank'><button>subaru 🇺🇸</button></a>
+                <a href='https://www.mopar.com/en-ca/my-vehicle/recalls/search.html' target='_blank'><button>Ram CA</button></a>
+                <a href='https://www.mopar.com/en-us/my-vehicle/recalls/search.html' target='_blank'><button>Ram US</button></a>
             </div>
             <div class='car-item'>
                 <div class='logo-container'>
                     <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/toyota.png' alt=toyotaLogo />
                 </div>
-                <a href='https://www.toyota.ca/toyota/en/owners/recalls' target='_blank'><button>toyota 🇨🇦</button></a>
-                <a href='https://www.toyota.com/recall' target='_blank'><button>toyota 🇺🇸</button></a>
+                <a href='https://www.toyota.ca/en/owners/recalls/' target='_blank'><button>Toyota CA</button></a>
+                <a href='https://www.toyota.com/recall/' target='_blank'><button>Toyota US</button></a>
+            </div>
+            <div class='car-item'>
+                <div class='logo-container'>
+                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/jeep.png' alt=jeepLogo />
+                </div>
+                <a href='https://www.mopar.com/en-ca/my-vehicle/recalls/search.html' target='_blank'><button>Jeep CA</button></a>
+                <a href='https://www.mopar.com/en-us/my-vehicle/recalls/search.html' target='_blank'><button>Jeep US</button></a>
+            </div>
+            <div class='car-item'>
+                <div class='logo-container'>
+                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/acura.png' alt=acuraLogo />
+                </div>
+                <a href='https://www.acura.ca/en/recalls' target='_blank'><button>Acura CA</button></a>
+                <a href='https://owners.acura.com/service-maintenance/recalls' target='_blank'><button>Acura US</button></a>
             </div>
             <div class='car-item'>
                 <div class='logo-container'>
                     <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/volkswagen.png' alt=volkswagenLogo />
                 </div>
-                <a href='https://www.vw.ca/en/owners/recalls.html' target='_blank'><button>volkswagen 🇨🇦</button></a>
-                <a href='https://www.vw.com/en/owners-recalls.html' target='_blank'><button>volkswagen 🇺🇸</button></a>
+                <a href='https://www.vw.ca/en/owners-and-drivers/recalls.html' target='_blank'><button>Volkswagen CA</button></a>
+                <a href='https://www.vw.com/en/owners-and-services/about-my-vehicle/recalls.html' target='_blank'><button>Volkswagen US</button></a>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">All other makes</h2>
+        <div class="container">
+
+            <div class='car-item'>
+                <div class='logo-container'>
+                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/audi.png' alt=audiLogo />
+                </div>
+                <a href='https://www.audi.ca/en/recalls/' target='_blank'><button>Audi CA</button></a>
+                <a href='https://www.audiusa.com/en/recalls/' target='_blank'><button>Audi US</button></a>
+            </div>
+            <div class='car-item'>
+                <div class='logo-container'>
+                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/bmw.png' alt=bmwLogo />
+                </div>
+                <a href='https://www.bmw.ca/en/ssl/VehicleRecall.html' target='_blank'><button>BMW CA</button></a>
+                <a href='https://www.bmwusa.com/safety-recalls.html' target='_blank'><button>BMW US</button></a>
+            </div>
+            <div class='car-item'>
+                <div class='logo-container'>
+                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/buick.png' alt=buickLogo />
+                </div>
+                <a href='https://www.gmccanada.ca/en/ownercenter/recalls' target='_blank'><button>Buick CA</button></a>
+                <a href='https://www.gmc.com/ownercenter/recalls' target='_blank'><button>Buick US</button></a>
+            </div>
+            <div class='car-item'>
+                <div class='logo-container'>
+                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/chrysler.png' alt=chryslerLogo />
+                </div>
+                <a href='https://www.mopar.com/en-ca/my-vehicle/recalls/search.html' target='_blank'><button>Chrysler CA</button></a>
+                <a href='https://www.mopar.com/en-us/my-vehicle/recalls/search.html' target='_blank'><button>Chrysler US</button></a>
+            </div>
+            <div class='car-item'>
+                <div class='logo-container'>
+                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/dodge.png' alt=dodgeLogo />
+                </div>
+                <a href='https://www.mopar.com/en-ca/my-vehicle/recalls/search.html' target='_blank'><button>Dodge CA</button></a>
+                <a href='https://www.mopar.com/en-us/my-vehicle/recalls/search.html' target='_blank'><button>Dodge US</button></a>
+            </div>
+            <div class='car-item'>
+                <div class='logo-container'>
+                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/genesis.png' alt=genesisLogo />
+                </div>
+                <a href='https://www.genesis.com/ca/en/owners/recalls.html' target='_blank'><button>Genesis CA</button></a>
+                <a href='https://www.genesis.com/us/en/support/recalls' target='_blank'><button>Genesis US</button></a>
+            </div>
+            <div class='car-item'>
+                <div class='logo-container'>
+                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/honda.png' alt=hondaLogo />
+                </div>
+                <a href='https://www.honda.ca/en/recalls' target='_blank'><button>Honda CA</button></a>
+                <a href='https://mygarage.honda.com/s/recall-search?brand=acura' target='_blank'><button>Honda US</button></a>
+            </div>
+            <div class='car-item'>
+                <div class='logo-container'>
+                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/hyundai.png' alt=hyundaiLogo />
+                </div>
+                <a href='https://www.hyundaicanada.com/en/owners-section/recalls' target='_blank'><button>Hyundai CA</button></a>
+                <a href='https://autoservice.hyundaiusa.com/campaignhome' target='_blank'><button>Hyundai US</button></a>
+            </div>
+            <div class='car-item'>
+                <div class='logo-container'>
+                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/infiniti.png' alt=infinitiLogo />
+                </div>
+                <a href='https://www.infiniti.ca/service/vin-recall.html' target='_blank'><button>Infiniti CA</button></a>
+                <a href='https://www.infinitiusa.com/owners/recalls-vin.html' target='_blank'><button>Infiniti US</button></a>
+            </div>
+            <div class='car-item'>
+                <div class='logo-container'>
+                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/kia.png' alt=kiaLogo />
+                </div>
+                <a href='https://www.kia.ca/en/owners/recalls' target='_blank'><button>Kia CA</button></a>
+                <a href='https://owners.kia.com/us/en/recalls.html' target='_blank'><button>Kia US</button></a>
+            </div>
+            <div class='car-item'>
+                <div class='logo-container'>
+                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/land-rover.png' alt=land-roverLogo />
+                </div>
+                <a href='https://www.landrover.ca/en/ownership/vin-recall.html' target='_blank'><button>Land Rover CA</button></a>
+                <a href='https://www.landroverusa.com/ownership/vin-recall.html' target='_blank'><button>Land Rover US</button></a>
+            </div>
+            <div class='car-item'>
+                <div class='logo-container'>
+                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/lexus.png' alt=lexusLogo />
+                </div>
+                <a href='https://www.lexus.ca/en/maintain-your-lexus/campaigns/' target='_blank'><button>Lexus CA</button></a>
+                <a href='https://www.toyota.com/recall/' target='_blank'><button>Lexus US</button></a>
+            </div>
+            <div class='car-item'>
+                <div class='logo-container'>
+                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/mercedes-benz.png' alt=mercedes-benzLogo />
+                </div>
+                <a href='https://www.mercedes-benz.ca/en/recalls' target='_blank'><button>Mercedes-Benz CA</button></a>
+                <a href='https://www.mbusa.com/en/recall' target='_blank'><button>Mercedes-Benz US</button></a>
+            </div>
+            <div class='car-item'>
+                <div class='logo-container'>
+                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/nissan.png' alt=nissanLogo />
+                </div>
+                <a href='https://www.nissan.ca/service/vin-recall.html' target='_blank'><button>Nissan CA</button></a>
+                <a href='https://www.nissanusa.com/owners/recalls-vin.html' target='_blank'><button>Nissan US</button></a>
+            </div>
+            <div class='car-item'>
+                <div class='logo-container'>
+                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/porsche.png' alt=porscheLogo />
+                </div>
+                <a href='https://www.porscheontario.com/check-vehicle-for-recalls/' target='_blank'><button>Porsche CA</button></a>
+                <a href='https://www.porsche-tennis.com/prod/pag/vinrecalllookup_V3.nsf/VIN?ReadForm&c=usa' target='_blank'><button>Porsche US</button></a>
+            </div>
+            <div class='car-item'>
+                <div class='logo-container'>
+                    <img src='https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/logos/thumb/subaru.png' alt=subaruLogo />
+                </div>
+                <a href='https://www.subaru.ca/WebPage.aspx?WebSiteID=282&WebPageID=21091' target='_blank'><button>Subaru CA</button></a>
+                <a href='https://www.subaru.com/recalls.html' target='_blank'><button>Subaru US</button></a>
             </div>
 
         </div>
