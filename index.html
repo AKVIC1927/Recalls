@@ -36,9 +36,17 @@
         justify-content: center;
         margin-bottom: 4px;
       }
+      .car-item .logo-container {
+        width: 100%;
+        overflow: visible;
+      }
       .car-item .logo-container img {
+        width: auto !important;
+        height: auto !important;
         max-height: 60px;
         max-width: 120px;
+        object-fit: contain;
+        display: block;
       }
       .car-item a {
         width: 100%;
@@ -81,16 +89,20 @@
         .car-item .logo-container {
           height: 48px;
         }
+        .car-item .logo-container {
+          height: 56px;
+        }
         .car-item .logo-container img {
-          max-height: 48px;
-          max-width: 96px;
+          max-height: 56px;
+          max-width: 110px;
         }
         .car-item button {
           min-width: 0;
           width: 100%;
           min-height: 44px;
           padding: 10px 6px;
-          font-size: 14px;
+          font-size: 15px;
+          letter-spacing: 0.3px;
         }
       }
     </style>
