@@ -2,9 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Recalls</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Recalls">
     <link rel="stylesheet" href="style.css">
     <style>
       .section-title {
@@ -49,6 +51,47 @@
         min-width: 170px;
         margin: 0;
         text-transform: none;
+        -webkit-appearance: none;
+        appearance: none;
+        cursor: pointer;
+        touch-action: manipulation;
+      }
+      body {
+        padding-left: env(safe-area-inset-left, 0px);
+        padding-right: env(safe-area-inset-right, 0px);
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+        -webkit-text-size-adjust: 100%;
+      }
+
+      /* Phones */
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 2rem;
+          margin: 24px 0 8px;
+        }
+        .section-title {
+          font-size: 1.3rem;
+          margin: 32px auto 16px;
+        }
+        .container {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 28px 12px;
+          padding: 0 12px;
+        }
+        .car-item .logo-container {
+          height: 48px;
+        }
+        .car-item .logo-container img {
+          max-height: 48px;
+          max-width: 96px;
+        }
+        .car-item button {
+          min-width: 0;
+          width: 100%;
+          min-height: 44px;
+          padding: 10px 6px;
+          font-size: 14px;
+        }
       }
     </style>
     <link rel="apple-touch-icon" sizes="180x180" href="fapple-touch-icon.png">
